@@ -1,0 +1,64 @@
+/*
+    Summary of Me Style Sheet
+    Author: David Vazquez
+    Date: 2/23/2023
+   
+    Filename: main.css
+
+*/
+
+
+
+/* HTML and Body Styles */
+
+body{background-color: hsl(34,44%,69%);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*Header Style */
+
+header{text-align: center}
+
+/* Heading Styles */
+
+h1{background-color: hsl(240,40%,60%);
+    color: white;  
+      font-size: 1.8em;
+}
+
+h2{background-color: hsl(240,40%,60%);
+    color: white;  
+      font-size: 1.3em;
+}
+
+
+
+/* Navigation Styles */	
+
+nav > ul {list-style-type: none;
+        font-size:1.0em;
+}
+
+
+
+/* List Styles */
+
+section > ol{list-style-type: upper-roman}
+
+section > ul{list-style-type: circle}
+
+p{margin-left:20px;
+        margin-right: 20px;
+}
+
+/* Footer Styles */
+
+footer{background-color: white;
+    padding: 25px;
+}
+
+
+
+
+
