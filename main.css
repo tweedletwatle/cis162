@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
     Summary of Me Style Sheet
     Author: David Vazquez
@@ -7,29 +9,81 @@
 
 */
 
+/* Structural Styles*/
+
+/* I think this gets rid of all browser styles so you can start fresh*/
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
 
 
-/* HTML and Body Styles */
+/* Typographic Styles */
 
-body{background-color: hsl(34,44%,69%);
-    font-family: Arial, Helvetica, sans-serif;
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
     
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 /*Header Style */
 
-header{text-align: center}
+header  {margin-left: auto;
+        margin-right:auto;
+        width: 30%;
+        max-width: 960px;
+        min-width: 640px;
+        padding: 20px;  
+        text-align: center;
+
+}
+
+
+
+/* HTML and Body Styles */
+
+/*Used Analogous color scheme https://www.w3schools.com/colors/colors_analogous.asp*/
+
+body{background-color: #CBE432; 
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 960px;
+    min-width: 640px;
+    width: 95%;
+    line-height: 1.0;
+    padding: 5px 50px 0px 50px;
+ 
+}
+
 
 /* Heading Styles */
 
-h1{background-color: hsl(240,40%,60%);
-    color: white;  
-      font-size: 1.8em;
+h1{ color: #213409;  
+    font-size: 1.8em;
+    max-width: 960px;
+    min-width: 640px;
+
 }
 
-h2{background-color: hsl(240,40%,60%);
-    color: white;  
-      font-size: 1.3em;
+h2{background-color: #213409;
+    color: #FDED2A;  
+    font-size: 1.3em;
+    padding: 10px 30px 10px 30px;
 }
 
 
@@ -40,13 +94,92 @@ nav > ul {list-style-type: none;
         font-size:1.0em;
 }
 
+body > nav.horizontalNavigation li {
+    width: 33.3%;
+}
 
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: #FDED2A;
+}   
+
+
+nav.horizontalNavigation li {
+    display: block;
+    float: left;
+}
+
+nav.horizontalNavigation a {
+    display: block;
+    text-align: center;
+}
+
+
+
+/*Section Styles */
+
+/* Left Column Styles */
+
+section#leftColumn {
+    clear: left;
+    float: left;
+    width: 55%;
+    background-color: #7FBD32;
+    color: #F7F4D4;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-color: #213409;
+}
+
+
+section#leftColumn_school {
+    clear: left;
+    float: left;
+    width: 62%;
+    background-color: #7FBD32;
+    color: #F7F4D4;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-color: #213409;
+    padding-bottom: 1px;
+}
+
+
+/* Right Column Styles */
+
+section#rightColumn {
+    float: left;
+    width: 45%;
+    background-color: #7FBD32;
+    color: #F7F4D4;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-color: #213409;
+    
+}
+
+section#rightColumn_school {
+    float: left;
+    width: 38%;
+    background-color: #7FBD32;
+    color: #F7F4D4;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-color: #213409;
+    padding: 40px 10px 0px 20px;
+    
+}
 
 /* List Styles */
 
-section > ol{list-style-type: upper-roman}
+section > ol{list-style-type: upper-roman;
+             list-style-position: inside;
 
-section > ul{list-style-type: circle}
+}
+
+section > ul{list-style-type: circle;
+            list-style-position: inside;
+}
 
 p{margin-left:20px;
         margin-right: 20px;
@@ -54,9 +187,22 @@ p{margin-left:20px;
 
 /* Footer Styles */
 
-footer{background-color: white;
-    padding: 25px;
+footer{
+    clear: left;
+    background-color: #FDED2A;
+    color: #213409;
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    min-width: 640px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    line-height: 1.3;
+    border-style: solid;
+    border-color: #213409;
+    font-size: 1.0em;
 }
+
 
 
 
