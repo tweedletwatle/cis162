@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/*
+    Saint Saens Style Sheet
+    Author: David Vazquez
+    Date: 3/24/2023
+   
+    Filename: main.css
+
+*/
+
+/* Structural Styles*/
+
+/* I think this gets rid of all browser styles so you can start fresh*/
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+
+/* Typographic Styles */
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+    
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/*Header Style */
+
+header  {margin-left: auto;
+        margin-right:auto;
+        width: 100%;
+        max-width: 960px;
+        min-width: 640px;
+        padding: 5px;  
+        text-align: center;
+
+
+}
+
+/* HTML and Body Styles */
+
+html {
+   background-image: url(vintage_sheet_Music.jpg);
+   font-family: Garamond, serif; 	
+}
+
+
+
+/* Body Header Styles */
+
+
+
+body > header > nav.horizontalNavigation li {
+    width: 25%;
+}
+
+body > header > h1 {
+    font-size: 1.5em;
+    background-color: blanchedalmond;
+    font-family: Garamond, Serif;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation li {
+    display: block;
+    float: left;
+}
+
+nav.horizontalNavigation a {
+    display: block;
+    text-align: center;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation a {
+   background-color: blanchedalmond;
+   font-family: Garamond, Serif;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: black;
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: yellow;
+}   
+
+
+/* Footer Styles */
+
+
+
+body > footer {
+   color: black;
+   background-color: blanchedalmond;
+   font-size: 1.3em;
+   font-weight: normal;
+   letter-spacing: 0.2em;
+   margin: 1em 0 0.5em 1em;
+}
+
+
+/* Grid Styles for Page Body */
+
+section{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.1em;
+}
+
+
+
+
+h2{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+figure{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+
+h3{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+
+h4{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+
+h5{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+
+
+
+
+
+/* Fit Image to page with consistent aspect ratio */
+
+img {
+  width: 950px;
+  height: 406px;
+}
+
+/* Figure Box Styles */
+
+figure {
+    margin: 20px auto 0px;
+    width:80%
+}
+
+figure img {
+    width: 270px;
+    height: 225px;
+    object-fit: contain;
+    display: block;
+    }
+
+figure figcaption {
+    background-color: transparent;
+    font-family: 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 0px 0;
+    text-align: center;
+    
+    
+}
+
