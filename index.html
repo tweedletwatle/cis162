@@ -20,7 +20,7 @@
           <ul>
              <li><a href="index.html">Early Life</a></li>
              <li><a href="#">French History</a></li>
-             <li><a href="#">Romantic Contemporaries</a></li>
+             <li><a href="Contemporaries.html">Romantic Contemporaries</a></li>
              <li><a href="#">Famous Pieces</a></li>
           </ul>
        </nav>
@@ -74,7 +74,78 @@
    </section>
 
     <footer>
-    <p> Sources:TBD </p>
+    <form id="survey" action="http://www.fake.com/survey" method="post">
+        <fieldset id="custInfo">
+        <legend> Contact Information</legend>
+            <div class="formRow">
+                <label for="name">Name*</label>
+                <input name="custName" id="name" type="text" placeholder="first and last name" required />
+            </div>
+            
+            <div class="formRow">
+                <label for="street">Street address</label>
+                <input name="custStreet" id="street" type="text" />
+            </div>
+            
+            <div class="formRow">
+                <label for="city">City</label>
+                <input name="custCity" id="city" type="text" />
+            </div>
+            
+            <div class="formRow">
+                <label for="state">State</label>
+                <input name="custState" id="state" type="text"  />
+            </div>
+            
+            <div class="formRow">
+                <label for="zip">Postal code</label>
+                <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)"
+                       pattern="^\d{5}(-\d{4})?$" />
+            </div>
+            
+            <div class="formRow">
+                <label for="phone">Phone number</label>
+                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
+                       pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+            </div>
+            
+            <div class="formRow">
+                <label for="mail">E-mail*</label>
+                <input name="custEmail" id="mail" type="email" required />
+            </div>
+            
+            <div class="formRow">
+            <label for="info">What is your favorite type of classical music?
+            <br />(select all that apply)    
+            </label>
+            <select name="infoSrc" id="info" size="5" multiple>
+             <option value="Medieval">Medieval 1150-1400</option>    
+             <option value="Renaissance">Renaissance 1400-1600</option>
+             <option value="Baroque">Baroque 1600-1750</option>
+             <option value="Classical">Classical 1750-1820</option>
+             <option value="Romantic">Romantic 1820-1900</option>
+             <option value="Modern"> Modern 1900-Present</option>
+            </select>
+                            
+            </div>
+            
+            <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+            <label for="mailCB"> Check the box if you want information about upcoming classical concerts and events
+            </label>
+            
+            
+         </fieldset>
+        
+       
+        
+        <div id="buttons">
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />            
+        </div>
+        
+    </form>
+        
+        
    </footer>
         
         
